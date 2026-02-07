@@ -1,1 +1,18 @@
-<app-product-card></app-product-card>
+<body class="bg-gray-900 text-gray-100 h-screen overflow-hidden flex flex-col">
+    <app-header></app-header>
+    <main class="flex-1 flex overflow-hidden">
+        <section class="flex-1 overflow-y-auto p-6 custom-scroll">
+            <app-burger-filter-section></app-burger-filter-section>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <app-product-card></app-product-card>
+            </div>
+        </section>
+
+        <aside class="w-96 bg-gray-800 border-l border-gray-700 flex flex-col shadow-2xl">
+            <app-sidebar></app-sidebar>
+        </aside>
+
+    </main>
+    <app-footer></app-footer>
+</body>
