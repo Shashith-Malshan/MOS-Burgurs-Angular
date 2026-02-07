@@ -5,10 +5,11 @@ import { BurgerFilterSectionComponent } from "./components/burger-filter-section
 import { FooterComponent } from "./components/footer/footer.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { HeaderComponent } from "./components/header/header.component";
+import { ProductCardHolderComponent } from "./components/product-card-holder/product-card-holder.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ProductCardComponent, BurgerFilterSectionComponent, FooterComponent, SidebarComponent, HeaderComponent],
+  imports: [RouterOutlet, ProductCardComponent, BurgerFilterSectionComponent, FooterComponent, SidebarComponent, HeaderComponent, ProductCardHolderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
