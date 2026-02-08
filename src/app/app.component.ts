@@ -6,10 +6,11 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { ProductCardHolderComponent } from "./components/product-card-holder/product-card-holder.component";
+import { HomeComponent } from "./pages/home/home.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ProductCardComponent, BurgerFilterSectionComponent, FooterComponent, SidebarComponent, HeaderComponent, ProductCardHolderComponent],
+  imports: [HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
