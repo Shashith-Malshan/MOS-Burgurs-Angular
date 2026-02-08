@@ -43,4 +43,8 @@ export class ProductsService {
       image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80'
     }
   ];
+
+  getProducts(){
+    return this.products;
+  }
 }
