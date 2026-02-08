@@ -12,16 +12,6 @@ import { ProductsService } from '../../services/data/products.service';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit {
-
-  private productService=inject(ProductsService)
-  
-  productList: any[]=[]
- 
-  ngOnInit(): void {
-    this.productList=this.productService.getProducts();
-    console.log(this.productList);
-    
-  }
+export class HomeComponent{
 
 }
