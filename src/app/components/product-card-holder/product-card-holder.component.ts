@@ -14,7 +14,7 @@ export class ProductCardHolderComponent implements OnInit {
   productList: any[]=[]
  
   ngOnInit(): void {
-    this.productList=this.productService.getProducts();
+    this.productList=this.productService.getAllProducts();
     console.log(this.productList);
     
   }

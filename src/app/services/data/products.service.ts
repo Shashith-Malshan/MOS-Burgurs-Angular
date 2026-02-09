@@ -98,11 +98,20 @@ export class ProductsService {
     }
   ];
 
-  getProducts() {
-    return this.products;
+
+
+  getAllProducts(): any[] {
+    return this.products.flatMap(p => p.item);
   }
 
-  getAllProducts(){
-    return this.products;
+  getProductsByCategory(category: string): any[] {
+    if (category === 'all') {
+      return this.getAllProducts();
+    }
+
+    return this.products.find(
+      p => p.category.toLowerCase() === category.toLowerCase()
+    )?.item || [];
   }
+
 }
