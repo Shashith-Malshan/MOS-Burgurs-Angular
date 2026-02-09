@@ -1,14 +1,13 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { SidebarComponent } from '../../components/sidebar/sidebar.component';
 import { HeaderComponent } from '../../components/header/header.component';
 import { BurgerFilterSectionComponent } from '../../components/burger-filter-section/burger-filter-section.component';
 import { FooterComponent } from '../../components/footer/footer.component';
-import { ProductCardHolderComponent } from '../../components/product-card-holder/product-card-holder.component';
-import { ProductsService } from '../../services/data/products.service';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [SidebarComponent,HeaderComponent,BurgerFilterSectionComponent,FooterComponent,ProductCardHolderComponent],
+  imports: [SidebarComponent, HeaderComponent, BurgerFilterSectionComponent, FooterComponent, RouterOutlet],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

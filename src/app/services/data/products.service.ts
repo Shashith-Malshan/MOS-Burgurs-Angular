@@ -9,7 +9,7 @@ export class ProductsService {
 
   products: any[] = [
     {
-      category: 'Beef',
+      category: 'beef',
       item: [
         {
           name: 'Beef Deluxe',
@@ -34,7 +34,7 @@ export class ProductsService {
       ]
     },
     {
-      category: 'Chicken',
+      category: 'chicken',
       item: [
         {
           name: 'Chicken Deluxe',
@@ -59,7 +59,7 @@ export class ProductsService {
       ]
     },
     {
-      category: 'Vegan',
+      category: 'vegan',
       item: [
         {
           name: 'Vegan Deluxe',
