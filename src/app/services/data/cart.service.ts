@@ -41,7 +41,7 @@ export class CartService {
     return this.cartItems;
   }
 
- 
+
   clearCart(): void {
     this.cartItems.length = 0;
   }
@@ -78,9 +78,14 @@ export class CartService {
   }
 
   removeItem(name: string): void {
-    this.cartItems = this.cartItems.filter(
-      item => item.name !== name
+    const index = this.cartItems.findIndex(
+      item => item.name === name
     );
+
+    if (index !== -1) {
+      this.cartItems.splice(index, 1);
+    }
   }
+
 
 }

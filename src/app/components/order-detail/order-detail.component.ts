@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { CartService } from '../../services/data/cart.service';
 
 @Component({
   selector: 'app-order-detail',
@@ -7,5 +8,20 @@ import { Component, Input } from '@angular/core';
   styleUrl: './order-detail.component.css'
 })
 export class OrderDetailComponent {
-  @Input() order:any
+  @Input() order: any
+
+  cartService = inject(CartService);
+
+  increase(name: string) {
+    this.cartService.increaseQuantity(name);
+  }
+
+  decrease(name: string) {
+    this.cartService.decreaseQuantity(name);
+  }
+
+  remove(name: string) {
+    this.cartService.removeItem(name);
+  }
+
 }
