@@ -62,12 +62,12 @@ export class ProductsService {
         image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80'
       },
       {
-        name: 'Mushroom Swiss (Plant-Based)',
+        name: 'Mushroom Swiss',
         price: 13.50,
         image: 'https://images.unsplash.com/photo-1520201163981-8cc95007dd2a?auto=format&fit=crop&w=800&q=80'
       },
       {
-        name: 'Quinoa & Avocado Burger',
+        name: 'Quinoa & Avocado',
         price: 12.95,
         image: 'https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?auto=format&fit=crop&w=800&q=80'
       }
@@ -75,18 +75,7 @@ export class ProductsService {
   }
 ];
 
-  orders: any[] = [
-    {
-      name: 'Bacon Smokey',
-      price: 5.03,
-      image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80'
-    },
-    {
-      name: 'Classic Deluxe',
-      price: 5.99,
-      image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80'
-    }
-  ];
+  
 
 
 
@@ -103,5 +92,12 @@ export class ProductsService {
       p => p.category.toLowerCase() === category.toLowerCase()
     )?.item || [];
   }
+
+  
+
+  
+
+
+
 
 }
