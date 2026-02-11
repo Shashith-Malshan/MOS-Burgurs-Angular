@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { OrderDetailsHolderComponent } from "../order-details-holder/order-details-holder.component";
 import { SubTotalComponent } from "../sub-total/sub-total.component";
 import { TotalComponent } from "../total/total.component";
@@ -12,5 +12,8 @@ import { PlaceOrderComponent } from "../place-order/place-order.component";
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
+
+
+
 
 }
