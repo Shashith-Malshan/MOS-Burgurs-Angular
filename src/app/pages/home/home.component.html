@@ -1,0 +1,15 @@
+<body class="bg-gray-900 text-gray-100 h-screen overflow-hidden flex flex-col">
+    <app-header></app-header>
+    <main class="flex-1 flex overflow-hidden">
+        <section class="flex-1 overflow-y-auto p-6 custom-scroll">
+            <app-burger-filter-section></app-burger-filter-section>
+            <router-outlet></router-outlet>
+        </section>
+
+        <aside class="w-96 bg-gray-800 border-l border-gray-700 flex flex-col shadow-2xl">
+            <app-sidebar></app-sidebar>
+        </aside>
+
+    </main>
+    <app-footer></app-footer>
+</body>

@@ -1,0 +1,5 @@
+<div class="h-[35vh] overflow-y-auto p-4 space-y-4 custom-scroll">
+  @for (order of orderList; track $index) {
+    <app-order-detail [order]="order"></app-order-detail>
+  }
+</div>
